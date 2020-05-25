@@ -128,3 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
+journal_pb2.py
