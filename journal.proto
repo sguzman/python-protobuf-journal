@@ -1,1 +1,12 @@
 syntax = "proto3";
+
+package journal;
+
+message JournalEntry {
+    uint64 time = 1;
+    string message = 2;
+}
+
+message Journal {
+    repeated JournalEntry entries = 1;
+}
