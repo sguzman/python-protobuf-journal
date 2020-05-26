@@ -8,7 +8,6 @@ def main() -> None:
     journal.time = int(time.time())
     journal.message = ' '.join(sys.argv[1:])
 
-    print(journal)
     print(journal.SerializeToString())
 
 
