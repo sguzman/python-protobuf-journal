@@ -8,7 +8,8 @@ def main() -> None:
     journal.time = int(time.time())
     journal.message = ' '.join(sys.argv[1:])
 
-    print(journal.SerializeToString())
+    byte_vec: bytes = bytes(journal.SerializeToString())
+    sys.stdout.buffer.write(byte_vec)
 
 
 if __name__ == '__main__':
